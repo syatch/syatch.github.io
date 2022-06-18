@@ -1,0 +1,49 @@
+.bg_trc_purple {
+    background-color:#1c1f87;
+}
+.bg_trc_yellow {
+    background-color:#e8b133;
+}
+.archive_contents {
+	height: auto;
+	width: 100%;
+	background-color:rgba(0,0,0,0.4);
+    border: 0vw;
+    padding: 0vw;
+    margin: auto;
+    text-align:left;
+}
+
+/*動作*/
+.archive_tab {
+    transition-duration:1000ms;
+}
+
+div.archive_base {
+    transition-duration:1000ms;
+}
+
+div.archive_base:hover {
+    color : #6600CC;
+}
+
+.archive_tab input {
+   display: none;
+}
+
+.archive_tab .archive_tab_show {
+    height: 0;
+    padding: 0;
+    overflow: hidden;
+    opacity: 0;
+}
+
+.archive_tab input:checked ~ .archive_tab_show {
+    height: auto;
+    opacity: 1;
+    transition-duration:1000ms;
+}
+
+.archive_tab input:checked ~ label > div.archive_base {
+    color : #6600CC;
+}
