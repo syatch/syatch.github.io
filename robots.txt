@@ -1,1 +1,3 @@
 User-agent: *
+Disallow:
+Sitemap: https://syatch.github.io/sitemap.xml
